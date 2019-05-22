@@ -1,0 +1,45 @@
+LIBOCXL_0 {
+	global:
+		ocxl_afu_enable_messages;
+		ocxl_afu_set_error_message_handler;
+		ocxl_default_afu_error_handler;
+		ocxl_default_error_handler;
+		ocxl_enable_messages;
+		ocxl_set_error_message_handler;
+		ocxl_err_to_string;
+		ocxl_info;
+		ocxl_afu_get_identifier;
+		ocxl_afu_get_device_path;
+		ocxl_afu_get_sysfs_path;
+		ocxl_afu_get_version;
+		ocxl_afu_get_pasid;
+		ocxl_afu_open_from_dev;
+		ocxl_afu_close;
+		ocxl_afu_open;
+		ocxl_afu_open_from_dev;
+		ocxl_afu_open_specific;
+		ocxl_afu_attach;
+		ocxl_irq_alloc;
+		ocxl_irq_get_handle;
+        ocxl_afu_get_event_fd;
+		ocxl_irq_get_fd;
+		ocxl_afu_event_check_versioned;
+		ocxl_afu_set_ppc64_amr;
+		ocxl_mmio_map;
+		ocxl_mmio_map_advanced;
+		ocxl_mmio_unmap;
+		ocxl_mmio_get_fd;
+		ocxl_mmio_size;
+		ocxl_mmio_get_info;
+		ocxl_mmio_read32;
+		ocxl_mmio_read64;
+		ocxl_mmio_write32;
+		ocxl_mmio_write64;
+
+	local:
+		*;
+};
+
+LIBOCXL_1_1 {
+        ocxl_afu_get_p9_thread_id;
+};
